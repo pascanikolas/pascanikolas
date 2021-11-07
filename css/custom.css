@@ -305,7 +305,7 @@ font-size: 1.8px;}
 
 #portfolio
 {
-  background-image: url('.../mobile_spiral_p.jpg');
+  background-image: url('../mobile_spiral_p.jpg');
   background-size: cover;
   background-repeat:no-repeat;
 
@@ -422,7 +422,7 @@ h1{
  }
  #about
  {
-   background-image: url('../images/images/bg_22.jpg');
+   background-image: url('../images/bg_22.jpg');
    background-size: cover;
    background-repeat: no-repeat;
 
