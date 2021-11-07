@@ -387,7 +387,7 @@ h1{
   /*  SINGLE PROJECT  */
   #single
   {
-    background-image: url('../images/portfolio/spiral_desktop.jpg');
+    background-image: url('../images/spiral_desktop.jpg');
     background-size: cover;
     background-repeat:repeat;
     background-attachment: fixed;
@@ -422,7 +422,7 @@ h1{
  }
  #about
  {
-   background-image: url('/Boostrap_Portfolio/images/bg_22.jpg');
+   background-image: url('../images/images/bg_22.jpg');
    background-size: cover;
    background-repeat: no-repeat;
 
