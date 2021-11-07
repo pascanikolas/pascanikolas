@@ -9,7 +9,7 @@ font-family: 'Open Sans';
 
 
 .hero{
-    background-image: url('../images/Hero_banner_soft.jpg');
+    background-image: url('images/Hero_banner_soft.jpg');
     background-size: cover;
     background-repeat:no-repeat ;
     height: 100vh;
@@ -18,7 +18,7 @@ font-family: 'Open Sans';
 }
 #portfolio
 {
-    background-image: url('../images/portfolio/spiral_p.png');
+    background-image: url('images/portfolio/spiral_p.png');
     background-size: contain;
     background-repeat:no-repeat;
     background-attachment: fixed;
@@ -139,7 +139,7 @@ footer
 
 /* Menu hamburger */
 .navbar-dark .navbar-toggler-icon  {
-  background-image: url('/Boostrap_Portfolio/images/cheeseburger.svg')!important;
+  background-image: url('images/cheeseburger.svg')!important;
   border: none!important;
   width: 70px;
   height: 70px;
