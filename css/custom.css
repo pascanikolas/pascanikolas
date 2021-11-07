@@ -1,0 +1,435 @@
+
+body
+{
+font-family: 'Open Sans';
+
+
+}
+
+
+
+.hero{
+    background-image: url('../images/Hero_banner_soft.jpg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+    height: 100vh;
+    border-radius: 0 !important;
+    
+}
+#portfolio
+{
+    background-image: url('../images/portfolio/spiral_p.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+a
+{
+  transition: 1s;
+  text-decoration: none;
+}
+a:hover
+{
+color:rgb(218, 213, 192);
+ 
+}
+
+
+h3
+{
+    color: #465B7A;
+    font-weight: bold;
+}
+footer
+{
+    background-color:#1A1F29;
+}
+
+
+/* social media */
+
+@keyframes social {
+  0%   { transform: scale(1,1)    translateY(0); }
+  10%  { transform: scale(1.1,.9) translateY(0); }
+  30%  { transform: scale(.9,1.1) translateY(-100px); }
+  50%  { transform: scale(1,1)    translateY(0); }
+  57%  { transform: scale(1,1)    translateY(-7px); }
+  64%  { transform: scale(1,1)    translateY(0); }
+  100% { transform: scale(1,1)    translateY(0); }
+}
+  #in:hover, #fb:hover, #ig:hover
+  {
+    animation-name: social;
+    animation-duration: 1.5s; 
+    transition: 1s;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count:inherit;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+
+ /* Logo nikolas */
+  #np
+  {
+  
+    animation: bounceIn 0.6s;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+    cursor: crosshair;
+  }
+  #np:hover
+  {
+    transform: rotate(10deg) scale(1.1);
+
+  }
+  @keyframes bounceIn {
+    0% {
+      opacity: 1;
+      transform: scale(.3);
+    } 
+  
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    } 
+  
+    70% {
+      opacity: 1;
+      transform: scale(.9);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+ /* backgorund animation */
+.element {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: #465B7A;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: #1A1F29;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: #465B7A;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: rgb(218, 213, 192);
+  }
+}
+
+/* Menu hamburger */
+.navbar-dark .navbar-toggler-icon  {
+  background-image: url('/Boostrap_Portfolio/images/cheeseburger.svg')!important;
+  border: none!important;
+  width: 70px;
+  height: 70px;
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-nav .nav-link 
+{
+  text-align: center; 
+}
+ .dropdowm-item a
+{
+  text-align: center;
+}
+
+
+
+.navbar-toggler>.close {
+  display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+  display:none;
+  border: none !important;
+}
+
+
+
+  @media screen and (max-width:1024px){
+
+
+     h1{
+      font-size: 4em;
+     }
+   h4{
+       font-size: 1.8em;
+     }
+     #port
+     {
+       margin-top: 3rem ;
+     }
+    
+
+    .hero
+    {
+       background-image: url('/Boostrap_Portfolio/images/Mobile_Hero_oft.jpg');
+       background-size: cover;
+       background-repeat: no-repeat;
+       position: left;
+    }
+   
+}
+@media screen and (max-width:450px){
+  h1{
+    font-size: 1.3em;
+   }
+   h4
+  {
+    font-size:0.8em;
+  }
+  #discover
+  {
+    font-size: 0.8rem ;
+  }
+ #mob
+ {
+   margin-left: 6em;
+ }
+ #port
+ {
+   font-size: 1.5em;
+ }
+ #n
+{
+font-size: 1.8px;}
+
+}
+@media screen and (max-width:600px){
+
+  
+
+ 
+   #h, #p, #tact
+   {
+    text-align: center;
+   }
+  
+  #touch
+  {
+    font-size: 1.8em;
+  }
+  
+  .element
+  {
+    display: none;
+  }
+  #git a
+  {
+    text-align: left !important;
+  }
+  #work
+  {
+    font-size:1.2em ;
+  }
+}
+@media screen and (max-width:990px){
+
+  #h, #p
+  {
+   text-align: center;
+  }
+
+  #mob
+  {
+    text-align: center;
+    margin-top: 10em !important;
+  }
+
+ 
+}
+
+/* bringing web desing to life */
+
+.life:hover
+{
+  background-image: url('/Boostrap_Portfolio/images/giphy.gif');
+  background-size:contain;
+  cursor: crosshair;
+
+
+}
+
+
+
+
+ /* PORTFOLIO */
+
+  #portfolio
+{
+    background-image: url('../images/portfolio/spiral_desktop.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+#postcard, #zengarden ,#landing ,#pr,#paco,#banner ,#ma, #qe
+{
+  transition-duration:1s;
+
+}
+
+#postcard:hover, #zengarden:hover ,#pr:hover ,#landing:hover ,#paco:hover,#banner:hover,#qe:hover,#ma:hover
+{
+  transform: scale(1.3);
+  cursor: crosshair;
+  
+}
+
+@media screen and (max-width:1710px){
+
+#portfolio
+{
+  background-image: url('../images/portfolio/mobile_spiral_p.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+
+}
+}
+
+/* TEXT ANIMATIONS H1,p, */
+
+
+h1{
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(90deg,#8ea5d1 , rgb(218, 213, 192), rgb(218, 213, 192));
+  letter-spacing: 8px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  animation: shine 5s linear ;
+  position: relative;
+  transition: 2s;
+
+}
+
+#hiya,#touch, #port
+
+{
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(90deg,#1A1F29 , rgb(218, 213, 192), rgb(218, 213, 192));
+  letter-spacing: 8px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  animation: shine 5s linear ;
+  position: relative;
+  transition: 2s;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -900%;
+  }
+  100% {
+    background-position-x: 900%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+ /* CONTACT  */
+  
+  #contact
+  {
+    background-image: url('../images/bg_contact_3.jpg');
+   
+  }
+  input
+ {
+   border:2px solid  rgb(218, 213, 192) !important;
+ }
+ textarea
+ {
+  border:2px solid  rgb(218, 213, 192) !important;
+
+ }
+  
+  
+  /*  SINGLE PROJECT  */
+  #single
+  {
+    background-image: url('../images/portfolio/spiral_desktop.jpg');
+    background-size: cover;
+    background-repeat:repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+    
+  }
+
+  path
+  {
+    transition: 1s;
+  }
+ path:hover
+ {
+   fill:rgb(0, 0, 0);
+
+ }
+ /* about */
+
+ #card
+ {
+   background-color: rgb(243, 237, 237) ;
+   border-radius: 8px;
+   padding: 10px;
+
+ }
+
+ #card:hover
+ {
+  background-color: rgb(255, 255, 255) ;
+  cursor: grabbing;
+
+ }
+ #about
+ {
+   background-image: url('/Boostrap_Portfolio/images/bg_22.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+
+ }
+ #nik
+ {
+   background-color: white;
+  border-radius: 10px;
+ }
+ 
