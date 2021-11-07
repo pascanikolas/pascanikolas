@@ -9,7 +9,7 @@ font-family: 'Open Sans';
 
 
 .hero{
-    background-image: url('images/Hero_banner_soft.jpg');
+    background-image: url('/images/Hero_banner_soft.jpg');
     background-size: cover;
     background-repeat:no-repeat ;
     height: 100vh;
@@ -186,7 +186,7 @@ footer
 
     .hero
     {
-       background-image: url('/Boostrap_Portfolio/images/Mobile_Hero_oft.jpg');
+       background-image: url('images/Mobile_Hero_oft.jpg');
        background-size: cover;
        background-repeat: no-repeat;
        position: left;
