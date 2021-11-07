@@ -266,7 +266,7 @@ font-size: 1.8px;}
 
 .life:hover
 {
-  background-image: url('/Boostrap_Portfolio/images/giphy.gif');
+  background-image: url('images/giphy.gif');
   background-size:contain;
   cursor: crosshair;
 
