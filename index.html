@@ -12,7 +12,41 @@
      <title>Portfolio Nikolas Pasca</title>
      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+window.CustomCursor = new(function() {
+	const self = this;
+	const css = `
+		.customCursor {
+			z-index: 999;
+			width: 22px;
+			height: 22px;
+			border: 1.2px solid #2980b9;
+			border-radius: 50%;
+			position: absolute;
+			transition-duration: 200ms;
+			transition-timing-function: ease-out;
+		}
+	`;
+	//Creating Style
+	const style = document.createElement('style');
+    style.appendChild(document.createTextNode(css));
+    document.querySelector('head').appendChild(style);
 
+	//Creating Cursor
+	const cursor = document.createElement('div');
+	cursor.className = "customCursor";
+	document.querySelector('body').appendChild(cursor);
+
+
+	//Creating Logic
+	document.addEventListener("mousemove", e => {
+		const {pageX, pageY} = e;
+		cursor.setAttribute(`style`, `top: ${pageY - 11}px; left: ${pageX - 11}px;`);
+	});
+
+	document.addEventListener("click", e => {
+		//soon
+	});
+});
 
      <!-- Favicons -->
      <link rel="icon" href="images/favicon.ico">
