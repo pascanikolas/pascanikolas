@@ -20,7 +20,44 @@
 
 
 <body id="portfolio">
+<script>
+window.CustomCursor = new(function() {
+	const self = this;
+	const css = `
+		.customCursor {
+			z-index: 999;
+			width: 80px;
+			height: 80px;
+			border: 2px solid #dad5c0;
+			border-radius: 50%;
+			position: absolute;
+			transition-duration: 200ms;
+			transition-timing-function: ease-out;
+			pointer-events: none; /* ADD_ME */
+		}
+	`;
+	//Creating Style
+	const style = document.createElement('style');
+    style.appendChild(document.createTextNode(css));
+    document.querySelector('head').appendChild(style);
 
+	//Creating Cursor
+	const cursor = document.createElement('div');
+	cursor.className = "customCursor";
+	document.querySelector('body').appendChild(cursor);
+
+
+	//Creating Logic
+	document.addEventListener("mousemove", e => {
+		const {pageX, pageY} = e;
+		cursor.setAttribute(`style`, `top: ${pageY - 40}px; left: ${pageX - 40}px;`);
+	});
+
+	document.addEventListener("click", e => {
+		//soon
+	});
+});
+	</script>
 
   <header>
     <!-- Navbar -->
