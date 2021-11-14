@@ -344,7 +344,7 @@ h1{
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-size: 90%;
-  animation: shine 5s linear ;
+  animation: shine 10s linear ;
   position: relative;
   transition: 2s;
 }
