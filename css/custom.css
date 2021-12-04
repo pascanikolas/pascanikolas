@@ -433,4 +433,8 @@ h1{
    background-color: white;
   border-radius: 10px;
  }
- 
+ only screen and (min-width:321px) and (max-width:768px){
+     .mt-5{
+         margin-top:0rem !important;
+     }
+{
