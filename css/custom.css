@@ -1,11 +1,15 @@
-
+html,
 body
-{
-font-family: 'Open Sans';
-cursor:crosshair!important;
-
+  {
+  font-family: 'Open Sans';
+  cursor:crosshair!important;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  touch-action: none;
 
 }
+
 
 
 
